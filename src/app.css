@@ -1,0 +1,51 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+
+/* Global Typography Styles */
+h1, h2, h3, h4, h5, h6 {
+  @apply font-serif;
+}
+
+h1 {
+  @apply text-4xl md:text-5xl lg:text-6xl font-bold;
+}
+
+h2 {
+  @apply text-3xl md:text-4xl font-bold text-primary;
+}
+
+h3 {
+  @apply text-xl md:text-2xl font-semibold text-primary;
+}
+
+p {
+  @apply font-sans text-gray-600;
+}
+
+.section-title {
+  @apply text-3xl md:text-4xl font-bold text-primary mb-6 font-serif;
+}
+
+.section-subtitle {
+  @apply text-lg text-gray-600 mb-8 font-sans;
+}
+
+/* Button Styles */
+.btn-primary {
+  @apply inline-block bg-primary text-white font-semibold px-6 py-3 rounded-md hover:bg-opacity-90 transition-colors;
+}
+
+.btn-secondary {
+  @apply inline-block bg-white text-primary font-semibold px-6 py-3 rounded-md hover:bg-gray-100 transition-colors;
+}
+
+/* Container Styles */
+.container {
+  @apply px-4 mx-auto;
+}
+
+/* Card Styles */
+.card {
+  @apply bg-white rounded-lg shadow-md p-6 transition-all duration-300 hover:shadow-lg;
+}
